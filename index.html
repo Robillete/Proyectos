@@ -53,8 +53,14 @@
             list-style-type: none;
             padding: 0;
         }
-        .profile-photo {
+        .profile-photo-container {
+            display: flex;
+            justify-content: center; /* Centra la imagen horizontalmente */
+            align-items: center; /* Centra la imagen verticalmente */
+            height: 250px; /* Ajusta la altura según sea necesario */
             margin: 20px 0;
+        }
+        .profile-photo {
             border-radius: 50%;
             width: 150px;
             height: 150px;
@@ -76,8 +82,11 @@
 <body>
     <div class="container">
         <h1>Currículum Vitae</h1>
-        <img src="foto_perfil.jpeg" alt="Foto de Rubén López Pérez" class="profile-photo">
 
+        <!-- Contenedor centrado de la imagen -->
+        <div class="profile-photo-container">
+            <img src="foto_perfil.jpeg" alt="Foto de Rubén López Pérez" class="profile-photo">
+        </div>
 
         <h2>Rubén López Pérez</h2>
 
