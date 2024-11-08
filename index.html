@@ -79,6 +79,11 @@
             transform: scale(1.01);
         }
 
+        .highlight {
+            background-color: rgba(0, 115, 230, 0.3); /* Fondo azul claro */
+            border: 2px solid #0073e6; /* Borde azul */
+        }
+
         h3 {
             background-color: #0073e6; /* Azul vibrante */
             color: #fff;
@@ -146,7 +151,7 @@
         <img src="foto_perfil.jpeg" alt="Foto de Rubén López Pérez" class="profile-photo">
         <h2>Rubén López Pérez</h2>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Datos Personales</h3>
             <div class="personal-info">
                 <div><strong>Nombre:</strong> Rubén López Pérez</div>
@@ -157,7 +162,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Contacto</h3>
             <div class="contact-info">
                 <div><strong>Correo:</strong> rubenlp2003@gmail.com</div>
@@ -166,7 +171,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Formación Académica</h3>
             <p><strong>Estudios Primarios:</strong> CEIP Ntra. Sra. del Rosario de Villacarrillo (2006-2015)</p>
             <p><strong>ESO:</strong> Instituto Sierra de las Villas de Villacarrillo (2015-2019)</p>
@@ -176,22 +181,22 @@
             <p><strong>Curso de Especialización en Ciberseguridad:</strong> Próximamente en IES Aguadulce</p>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Formación Complementaria</h3>
             <p>Curso de impresión en 3D - Centro de Ocio de Villacarrillo</p>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Experiencia Profesional</h3>
             <p>Actualmente en búsqueda de empleo y continuando mi formación.</p>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Idiomas</h3>
             <p>Inglés (nivel básico) - Interesado en continuar en la Escuela Oficial de Idiomas</p>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Conocimientos Informáticos</h3>
             <div class="skills">
                 <div>
@@ -211,7 +216,7 @@
             </div>
         </div>
 
-        <div class="section">
+        <div class="section" onclick="highlightSection(this)">
             <h3>Otros Datos</h3>
             <p>Persona amable, sociable y con capacidad para el trabajo en equipo.</p>
             <p>Disponibilidad total, con posibilidad de desplazamiento a otras localidades.</p>
@@ -223,6 +228,17 @@
         </div>
 
     </div>
+
+    <script>
+        function highlightSection(section) {
+            // Eliminar la clase 'highlight' de todas las secciones
+            document.querySelectorAll('.section').forEach(function(sec) {
+                sec.classList.remove('highlight');
+            });
+            // Añadir la clase 'highlight' a la sección seleccionada
+            section.classList.add('highlight');
+        }
+    </script>
 
 </body>
 </html>
