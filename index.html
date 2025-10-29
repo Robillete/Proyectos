@@ -127,7 +127,8 @@
         /* Estilos específicos para proyectos */
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* AUMENTO DEL TAMAÑO MÍNIMO */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 25px;
             margin-top: 20px;
         }
@@ -147,43 +148,50 @@
         
         .project-image {
             width: 100%;
-            height: 200px;
+            /* AUMENTO DE LA ALTURA DE LA IMAGEN */
+            height: 250px;
             object-fit: cover;
             border-bottom: 2px solid #0073e6;
         }
         
         .project-info {
-            padding: 20px;
+            /* AUMENTO DEL RELLENO */
+            padding: 25px;
         }
         
         .project-title {
             color: #0073e6;
-            font-size: 22px;
+            /* AUMENTO DEL TAMAÑO DEL TÍTULO */
+            font-size: 26px; 
             margin-top: 0;
             margin-bottom: 15px;
+            min-height: 35px; /* Asegura un espacio mínimo para títulos largos */
         }
         
         .project-description {
             font-size: 16px;
             line-height: 1.5;
             margin-bottom: 20px;
+            min-height: 70px; /* Asegura un espacio mínimo para descripciones cortas */
         }
         
         .project-links {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px; /* Reducido para más botones */
         }
         
         .github-button {
             background-color: #0073e6;
             color: white !important;
-            padding: 10px 20px;
+            padding: 8px 15px; /* Reducido el padding para más botones */
             border-radius: 5px;
             font-weight: bold;
+            font-size: 14px;
             transition: all 0.3s ease;
             display: inline-block;
+            text-align: center;
         }
         
         .github-button:hover {
@@ -253,19 +261,54 @@
 </h4>
                         <p class="project-description">Página web desarrollada con WordPress y Divi para la promoción y venta de productos de aceite de oliva de alta calidad.</p>
                         <div class="project-links">
-                            <a href="https://docs.google.com/document/d/1dakLYF7Eqe-0mYYfPGOOePsXWNNVIa9U/edit?usp=sharing&ouid=101178083902535062255&rtpof=true&sd=true" target="_blank" class="github-button">Manual de Usuario</a>
-                            <a href="https://drive.google.com/file/d/11NEgSqzmGTl0PtosYj9BOl5PUzyrzttL/view?usp=sharing" target="_blank" class="github-button">Ejecución del proyecto, Pruebas y soporte</a>
+                            <a href="https://drive.google.com/file/d/1UPjxHPtPVZO6YPzCqW5xJDJxh50VoiuB/view?usp=sharing" target="_blank" class="github-button">Manual de Usuario</a>
+                            <a href="https://drive.google.com/file/d/1nKKh68_Qz2uir04vtdhQVurl_JbqWO40/view?usp=sharing" target="_blank" class="github-button">Ejecución, Pruebas y Soporte</a>
+                            <a href="https://drive.google.com/file/d/18S-93UdoiNDXM2ZUTBOZcEuTjz-aMVXX/view?usp=sharing" target="_blank" class="github-button">Documentación Códigos Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="python_modules.jpg" alt="Módulos Python" class="project-image">
+                    <div class="project-info">
+                        <h4 class="project-title">Módulos_Python (Paquete PIP)</h4>
+                        <p class="project-description">Paquete Python distribuible enfocado en utilidades de **Conversión de Bases Numéricas** (Hexadecimal, Romana) y **Manipulación de Cadenas** (Cifrado César, Histogramas).</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Robillete/Modulos_Python" target="_blank" class="github-button">Acceder al GitHub</a>
+                            <a href="https://github.com/Robillete/Modulos_Python/blob/main/README.md" target="_blank" class="github-button">Ver README</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="project-card">
-                    <img src="python_modules.jpg" alt="Módulos Python" class="project-image"> <div class="project-info">
-                        <h4 class="project-title">Módulos_Python (Paquete PIP)</h4>
-                        <p class="project-description">Paquete Python distribuible (instalable con `pip`) enfocado en utilidades de **Conversión de Bases Numéricas** (Hexadecimal, Romana) y **Manipulación de Cadenas** (Cifrado César, Histogramas).</p>
+                    <img src="nginx_docker.jpg" alt="Docker Nginx" class="project-image">
+                    <div class="project-info">
+                        <h4 class="project-title">Ejercicio 4: Contenedor Demonizado Nginx</h4>
+                        <p class="project-description">Creación y gestión de un contenedor demonio Docker con la imagen oficial de Nginx. Incluye la comprobación de funcionamiento y la visualización de logs.</p>
                         <div class="project-links">
-                            <a href="https://github.com/Robillete/Modulos_Python" target="_blank" class="github-button">Acceder al GitHub</a>
-                            <a href="https://github.com/Robillete/Modulos_Python/blob/main/TunombreT9/README.md" target="_blank" class="github-button">Ver README</a>
+                            <a href="https://drive.google.com/file/d/15MoVesjKZKjyUy8tY44iTgbki_rYUHRV/view?usp=sharing" target="_blank" class="github-button">Ver Documento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="bastionado.jpg" alt="Bastionado y Seguridad" class="project-image">
+                    <div class="project-info">
+                        <h4 class="project-title">TAREA 3: Bastionado RLP (GPG, TLS y Radius)</h4>
+                        <p class="project-description">Ejercicios de seguridad enfocados en Cifrado con GPG, generación de Certificados TLS/SSL con Apache y la instalación/configuración de Servidor Radius.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1SvUSFiK2mEUoFmRDzeDsMhmq_MgPS_T6/view?usp=sharing" target="_blank" class="github-button">Ver Documento</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="forense.jpg" alt="Análisis Forense" class="project-image">
+                    <div class="project-info">
+                        <h4 class="project-title">Análisis Forense (Volatility 2 y 3)</h4>
+                        <p class="project-description">Informe detallado sobre el análisis de una imagen de memoria con la herramienta Volatility, incluyendo listado de procesos, aplicaciones y obtención de contraseñas.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1vP4x72dcbaPzuasnyLr4iXIuV2DYG9pM/view?usp=sharing" target="_blank" class="github-button">Ver Documento</a>
                         </div>
                     </div>
                 </div>
@@ -274,7 +317,7 @@
         </div>
 
         <div class="footer">
-                <p>Portafolio actualizado a OCTUBRE DE 2025</p>
+            <p>Portafolio actualizado a ABRIL DE 2025</p>
         </div>
     </div>
 
